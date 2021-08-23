@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    padding: 1vw;
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -34,12 +34,17 @@ const CardImg = styled.div`
     }
 `
 const CardText = styled.div`
-    font-size: 1.2vw;
-    h1 {
-        font-size: ;
+    
+    h2 {
+        font-size: 2vw;
+        border-bottom: 2px solid #000;
+        width: 50%;
+        
     }
     p {
+        padding-top: 1rem;
         text-align: justify;
+        font-size: 1.3vw;
     }
 `
 
@@ -47,7 +52,7 @@ const ProductCard = (props) => {
     return (
         <Wrapper>
             <CardImg>
-                <a href="/"><img src={props.img} alt="gallery"/>
+                <img src={props.img} alt="gallery"/><a href="/">
                 <p>zobacz galerie</p>
                 </a>
 

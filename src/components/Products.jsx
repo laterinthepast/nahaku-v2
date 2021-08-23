@@ -6,7 +6,7 @@ import meduza from '../images/1 (1).jpg'
 import inne from '../images/1 (6).jpg'
 
 const Wrapper = styled.div`
-    padding: 2vw;
+    padding: 4vw;
     h1 {
         font-size: 5vw;
     }
