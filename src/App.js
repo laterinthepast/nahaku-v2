@@ -1,10 +1,11 @@
+import Navbar from "./components/Navbar";
 import SideBar from "./components/Sidebar";
 
 
 function App() {
   return (
     <div className="App">
-      <h1>jsjsjsjjs</h1>
+      <Navbar />
       <SideBar/>
     </div>
   );
