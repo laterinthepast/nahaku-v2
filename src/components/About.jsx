@@ -53,6 +53,7 @@ const About = () => {
                     <img src={aboutMeIMG} alt="aboutme" />
                 </div>
                 <div className="about-text">
+                    <h2>o mnie</h2>
                     <p>Agnieszka Sieroń jest właścicielką 60-metrowego mieszkania w Tarnowie, w którym mieszka wraz z mężem i dwójką dzieci. Na profilu @na_czwartym na Instagramie, Agnieszka dzieli się swoją pasją do aranżacji wnętrz, odnawiania starych mebli oraz tworzenia własnoręcznych dekoracji. Obserwujący mogą śledzić ciągłe zmiany, których Agnieszka dokonuje w swoim mieszkaniu i śmiałe metamorfozy tej niewielkiej przestrzeni. </p>
                 </div>
             </AboutSection>
