@@ -6,7 +6,7 @@ import meduza from '../images/1 (1).jpg'
 import inne from '../images/1 (6).jpg'
 
 const Wrapper = styled.div`
-    padding: 4vw;
+    padding: 2vw;
     h1 {
         font-size: 5vw;
     }
@@ -15,6 +15,8 @@ const ProductWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5vw;
+    padding: 10vw;
 `
 
 const Products = () => {

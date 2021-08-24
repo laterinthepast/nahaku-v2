@@ -11,13 +11,17 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
     .left-nav {
         display: flex;
     }
 `
 const Logo = styled.div`
+    
     img {
-        width: 10vw;
+        height: auto;
+        width: 7vw;
+        
     }
 `
 const Socials = styled.div`
@@ -25,7 +29,7 @@ const Socials = styled.div`
     justify-content: space-between;
     align-items: center;
     img {
-        width: 2vw;
+        width: 1.5vw;
     }
     a {
         padding-left: 3vw;
@@ -37,17 +41,18 @@ const Nav = styled.div`
     align-items: center;
 `
 const Navitem = styled.div`
-    border: 3px solid #000;
-    
+    border: 1px solid #000;
     text-align: center;
-    padding: 3px;
+    
     transition: 0.2s all ease-in-out;
     margin-right: 3vw;
+    padding: 0.5rem;
     :hover {
-        border: 3px solid transparent;  
+        border: 1px solid transparent;  
+        
     }
-    a   {  
-        width: 100%;
+    a {  
+        font-size: 80%;
         text-decoration: none;
     }
 `

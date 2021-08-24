@@ -2,17 +2,16 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    padding: 3vw;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
 `
 const CardImg = styled.div`
-    
     img {
         width: 100%;
-        
     }
     position: relative;
     p {
@@ -34,17 +33,15 @@ const CardImg = styled.div`
     }
 `
 const CardText = styled.div`
-    
     h2 {
         font-size: 2vw;
         border-bottom: 2px solid #000;
         width: 50%;
-        
     }
     p {
         padding-top: 1rem;
         text-align: justify;
-        font-size: 1.3vw;
+        font-size: 1.1vw;
     }
 `
 
@@ -55,7 +52,6 @@ const ProductCard = (props) => {
                 <img src={props.img} alt="gallery"/><a href="/">
                 <p>zobacz galerie</p>
                 </a>
-
             </CardImg>
             <CardText>
                 <h2>{props.title}</h2>
