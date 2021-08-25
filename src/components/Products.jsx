@@ -16,7 +16,7 @@ const ProductWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    padding: 10vw;
+    padding: 2vw 10vw;
 `
 
 const Products = () => {

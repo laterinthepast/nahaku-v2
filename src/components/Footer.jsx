@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     .logo-footer{
         flex:1;
         img {
-            width: 10vw;
+            width: 5vw;
         }
     }
     .icons-footer {
@@ -22,14 +22,14 @@ const Wrapper = styled.div`
         display: flex;
         justify-content: space-evenly;
         img {
-            
-            width: 4vw;
+            width: 2vw;
         }
     }
     .email-footer{
         flex:1;
-        font-size: 2.2vw;
+        font-size: 1.5vw;
         a {
+            color: #000;
             text-decoration: none;
             cursor: pointer;
         }
