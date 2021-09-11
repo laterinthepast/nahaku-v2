@@ -4,6 +4,11 @@ import aboutMeIMG from '../images/restronainternetowa/about.jpg'
 
 const Wrapper = styled.div`
     padding: 5vw;
+    @media (max-width:768px){
+        display: flex;
+        flex-direction: column;
+        
+    }
 `
 const Button = styled.div`
     display: flex;
@@ -23,6 +28,15 @@ const Button = styled.div`
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
     }
+    @media (max-width:768px){
+        padding: 10vw 0;
+        button {
+            width: 60vw;
+            height: 20vw;
+            font-size: 5vw;
+        }
+        
+    }
 `
 const AboutSection = styled.div`
     display: flex;
@@ -37,6 +51,19 @@ const AboutSection = styled.div`
             width: 20vw;
             border-radius: 50px;
         }
+    }
+    @media (max-width:768px){
+        flex-direction: column;
+        .about-img {
+           img {
+            width: 70vw;
+            border-radius: 0px;
+            } 
+        }  
+        h2 {
+            border-bottom: 2px solid #000;
+        }
+        font-size: 4vw;
     }
 `
 

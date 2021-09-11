@@ -2,14 +2,20 @@ import React from 'react'
 import styled from 'styled-components';
 import ProductCard from './ProductCard';
 import oczy from '../images/1 (3).jpg'
-import meduza from '../images/1 (1).jpg'
-import inne from '../images/1 (6).jpg'
+
 
 const Wrapper = styled.div`
     padding: 2vw;
     h1 {
         font-size: 5vw;
     }
+    @media (max-width:768px){
+        padding: 1vw;
+        h1 {
+            font-size: 10vw;
+}   
+    }
+    
 `
 const ProductWrapper = styled.div`
     display: flex;
@@ -17,6 +23,10 @@ const ProductWrapper = styled.div`
     align-items: center;
     gap: 5vw;
     padding: 2vw 10vw;
+    @media (max-width:768px){
+        flex-direction: column;
+        
+    }
 `
 
 const Products = () => {

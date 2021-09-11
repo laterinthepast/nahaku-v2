@@ -26,8 +26,8 @@ const NavBackground = styled.div`
     position: fixed;
     top: 1rem;
     right:1rem;
-    background: rgb(10,71,26);
-    background: linear-gradient(36deg, rgba(10,71,26,1) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
+    background: rgb(217,242,223);
+    background: linear-gradient(36deg, rgba(217,242,223,1) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -116,8 +116,7 @@ const ItemLink = styled.div`
         120deg,
         transparent 0%,
         transparent 50%,
-        #fff 50%
-
+        #d9f2df 50%
     );
     background-size: 240%;
     transition: all 0.2s;
@@ -131,7 +130,10 @@ const ItemLink = styled.div`
     a {
         text-decoration: none;
         color: #000;
+       
+        
     }
+    
     
 `
 const LogoImg = styled.div`

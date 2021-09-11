@@ -34,7 +34,30 @@ const Wrapper = styled.div`
             cursor: pointer;
         }
     }
+    @media (max-width:768px){
+        flex-direction: column;
+        gap: 2rem;
+        .logo-footer{
+        img {
+            width: 30vw;
+            }
+        }
+        .icons-footer {
         
+        display: flex;
+        
+        gap: 3rem;
+        img {
+            width: 10vw;
+            }
+        }
+        .email-footer{
+        
+        font-size: 6vw;
+        
+    }
+        
+    } 
     
 `
 
@@ -51,9 +74,9 @@ const Footer = () => {
                 <a href="/"><img src={pinIMG} alt="pintrest" /></a>
             </div>
             <div className="email-footer">
-                <a href = "mailto: abc@example.com">na_ha_ku@paczajmejl.com</a>
+                <a href="mailto: abc@example.com">na_ha_ku@paczajmejl.com</a>
             </div>
-            
+
         </Wrapper>
 
 

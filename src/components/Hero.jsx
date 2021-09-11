@@ -8,6 +8,12 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     transition: 0.2s all ease-in-out;
+    @media (max-width:768px){
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 `
 const LeftHero = styled.div`
     img {
@@ -16,6 +22,11 @@ const LeftHero = styled.div`
     padding: 3vw;
     border-left: 10px solid #000;
     transition: 0.1s all ease-in-out;
+    @media (max-width:768px){
+        img {
+            height: 50vh;
+        }
+    }
 `
 const RightHero = styled.div`
     background-color: rgba(255,255,255, .1);
@@ -30,6 +41,15 @@ const RightHero = styled.div`
     }
     margin-left:-7vw;
     transition: 0.4s all ease-in-out;
+    @media (max-width:768px){
+        h1 {
+        font-size: 10vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+        margin:0vw;
+    }
 `
 
 const Hero = () => {

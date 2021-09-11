@@ -7,7 +7,10 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
+    @media (max-width:768px){
+        border-bottom: 1px solid #000;
+        
+    }
 `
 const CardImg = styled.div`
      z-index: 1;
@@ -33,6 +36,13 @@ const CardImg = styled.div`
             background-color: rgba(255,255,255,.8);
         }
     }
+    @media (max-width:768px){
+        p {
+            font-size: 7vw;
+        }
+        
+    }
+
 `
 const CardText = styled.div`
     h2 {
@@ -44,6 +54,18 @@ const CardText = styled.div`
         padding-top: 1rem;
         text-align: justify;
         font-size: 1.1vw;
+    }
+    @media (max-width:768px){
+        h2 {
+        font-size: 7vw;
+        
+    }
+    p {
+        padding-top: 0.5rem;
+        
+        font-size: 5vw;
+    }
+        
     }
 `
 
