@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 
 const Footer = () => {
     return (
-        <Wrapper>
+        <Wrapper id="contact">
             <div className="logo-footer">
                 <a href="/"><img src={logoIMG} alt="Logo" /></a>
             </div>

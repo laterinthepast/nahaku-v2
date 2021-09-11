@@ -1,89 +1,195 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import styled from 'styled-components';
-import logoIMG from '../images/icons/lego.png'
-import etsyIMG from '../images/icons/etsy.png'
-import instaIMG from '../images/icons/insta.png'
-import pinIMG from '../images/icons/pin.png'
+import logo from '../images/icons/lego.png'
 
+const COLORS = {
+    primaryDark: "#114b4c",
+    primaryLight: "#B6EDC8"
+};
 
-const Wrapper = styled.div`
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    .left-nav {
-        display: flex;
-    }
+const MenuLabel = styled.label`
+    background-color: #fff;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
 `
-const Logo = styled.div`
+
+const NavBackground = styled.div`
+    position: fixed;
+    top: 1rem;
+    right:1rem;
+    background: rgb(10,71,26);
+    background: linear-gradient(36deg, rgba(10,71,26,1) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    transform: ${props => props.clicked ? "scale(80)" : "scale(0)"};
+    transition: transform 0.5s;
+    z-index: 7;
+`
+
+const Icon = styled.span`
+    position: relative;
+    background-color: ${(props) => (props.clicked) ? "transparent" : "#000"};
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    margin-top: 2.5rem;
+    transition: all 0.3s;
+
+    &::before, &::after {
+        content:"";
+        background-color: #000;
+        width: 3rem;
+        height: 2px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ;
+    }
+    &::before {
+        top: ${(props) => props.clicked ? "0" : "-0.8rem"};
+        transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
+    }
+    &::after {
+        top: ${(props) => props.clicked ? "0" : "0.8rem"};
+        transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
+    }
+
+`
+
+const Navigation = styled.nav`
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    width: 100%;
+    opacity: ${(props) => (props.clicked ? "100%" : "0")};
+    visibility: ${(props) => (props.clicked ? "visible" : "hidden")};
+    transition: opacity 0.8s ease-in-out;
+    animation: ${(props) => (props.clicked ? "right_to_left 0.8s ease" : "left_to_right 0.3s ease")};
     
-    img {
-        height: auto;
-        width: 7vw;
-        
+    @keyframes right_to_left {
+        from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: 0;
+        }
     }
+    @keyframes left_to_right {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 100%;
+        }
+    }
+    
+    
 `
-const Socials = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    img {
-        width: 1.5vw;
+const List = styled.ul`
+    position: absolute;
+    list-style: none;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+`
+const ItemLink = styled.div`
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: ${COLORS.primaryLight};
+
+    background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        #fff 50%
+
+    );
+    background-size: 240%;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: ${COLORS.primaryDark};
+        transform: translateX(1rem) ;
     }
     a {
-        padding-left: 3vw;
-    }
-`
-const Nav = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-`
-const Navitem = styled.div`
-    border: 1px solid #000;
-    text-align: center;
-    
-    transition: 0.2s all ease-in-out;
-    margin-right: 3vw;
-    padding: 0.5rem;
-    :hover {
-        border: 1px solid transparent;  
-        
-    }
-    a {  
-        font-size: 80%;
         text-decoration: none;
+        color: #000;
+    }
+    
+`
+const LogoImg = styled.div`
+    img {
+        width: 7rem;
     }
 `
+
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+
     return (
-        <Wrapper>
-            <div className="left-nav">
-                <Logo >
-                    <a href="/"><img src={logoIMG} alt="Logo" /></a>
-                </Logo>
-                <Socials>
-                    <a href="/"><img src={instaIMG} alt="insta" /></a>
-                    <a href="/"><img src={etsyIMG} alt="etsy" /></a>
-                    <a href="/"><img src={pinIMG} alt="pintrest" /></a>
-                </Socials>
-            </div>
-            <Nav>
-                <Navitem>
-                    <a href="/">o mnie</a>
-                </Navitem>
-                <Navitem>
-                    <a href="/">produkty</a>
-                </Navitem>
-                <Navitem>
-                    <a href="/">sklep</a>
-                </Navitem>
-                <Navitem>
-                    <a href="/">kontakt</a>
-                </Navitem>
-            </Nav>
-        </Wrapper>
+        <>
+            <LogoImg>
+                <img src={logo} alt="aa" href="/" />
+            </LogoImg>
+
+            <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
+                <Icon clicked={click}>&nbsp;</Icon>
+            </MenuLabel>
+            <NavBackground clicked={click}>&nbsp;</NavBackground>
+
+            <Navigation clicked={click}>
+                <List>
+                    <li>
+                        <ItemLink>
+                            <a href="#products" onClick={handleClick}>
+                                produkty
+                            </a>
+                        </ItemLink>
+                    </li>
+                    <li>
+                        <ItemLink>
+                            <a href="#about" onClick={handleClick}>
+                                o mnie
+                            </a>
+                        </ItemLink>
+                    </li>
+                    <li>
+                        <ItemLink>
+                            <a href="https://www.etsy.com" rel="noopener noreferrer" target="_blank" onClick={handleClick}>
+                                sklep
+                            </a>
+                        </ItemLink>
+                    </li>
+                    <li>
+                        <ItemLink>
+                            <a href="#contact" onClick={handleClick}>
+                                kontakt
+                            </a>
+                        </ItemLink>
+                    </li>
+                </List>
+            </Navigation>
+
+
+        </>
     )
 }
 

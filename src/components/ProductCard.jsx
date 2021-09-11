@@ -10,8 +10,10 @@ const Wrapper = styled.div`
     
 `
 const CardImg = styled.div`
+     z-index: 1;
     img {
         width: 100%;
+       
     }
     position: relative;
     p {
@@ -47,9 +49,10 @@ const CardText = styled.div`
 
 const ProductCard = (props) => {
     return (
-        <Wrapper>
+        <Wrapper id="products">
             <CardImg>
-                <img src={props.img} alt="gallery"/><a href="/">
+                <img src={props.img} alt="gallery"/>
+                <a href="/">
                 <p>zobacz galerie</p>
                 </a>
             </CardImg>

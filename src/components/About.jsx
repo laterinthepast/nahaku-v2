@@ -44,7 +44,7 @@ const AboutSection = styled.div`
 
 const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Button>
                 <a href="/"><button>przejdz do sklepu</button></a>
             </Button>
