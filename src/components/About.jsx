@@ -31,6 +31,7 @@ const Button = styled.div`
     @media (max-width:768px){
         padding: 10vw 0;
         button {
+            background: #d9f2df;
             width: 60vw;
             height: 20vw;
             font-size: 5vw;

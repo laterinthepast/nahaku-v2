@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import heroIMG from '../images/restronainternetowa/hero.jpg'
 
 const Wrapper = styled.div`
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.2s all ease-in-out;
     @media (max-width:768px){
-        height: 85vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
     }
 `
 const LeftHero = styled.div`
@@ -34,10 +34,10 @@ const RightHero = styled.div`
         background-color: rgba(255,255,255, 1);
     }
     h1 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     h2 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     margin-left:-7vw;
     transition: 0.4s all ease-in-out;

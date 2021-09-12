@@ -74,7 +74,7 @@ const ProductCard = (props) => {
         <Wrapper id="products">
             <CardImg>
                 <img src={props.img} alt="gallery"/>
-                <a href="/">
+                <a href={props.url}>
                 <p>zobacz galerie</p>
                 </a>
             </CardImg>

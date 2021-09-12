@@ -138,7 +138,13 @@ const ItemLink = styled.div`
 `
 const LogoImg = styled.div`
     img {
-        width: 7rem;
+        position: absolute;
+        width: 10rem;
+    }
+    @media (max-width:768px){
+        img {
+            width: 7rem;
+        }
     }
 `
 
