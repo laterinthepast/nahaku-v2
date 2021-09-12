@@ -31,7 +31,8 @@ const Button = styled.div`
     @media (max-width:768px){
         padding: 10vw 0;
         button {
-            background: #d9f2df;
+            background: rgb(217,242,223);
+            background: linear-gradient(36deg, rgba(217,242,223,1) 0%, rgba(236,246,238,1) 58%, rgba(255,255,255,1) 100%);
             width: 60vw;
             height: 20vw;
             font-size: 5vw;
