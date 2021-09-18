@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
-import heroIMG from '../images/restronainternetowa/hero.jpg'
+import heroIMG from '../images/rozne/heroimg.jpg'
 
 const Wrapper = styled.div`
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     transition: 0.2s all ease-in-out;
+    background: rgb(255,255,255);
+    background: linear-gradient(318deg, rgba(255,255,255,1) 0%, rgba(249,255,249,1) 78%);
     @media (max-width:768px){
         height: 100vh;
         display: flex;
@@ -15,12 +17,15 @@ const Wrapper = styled.div`
         justify-content: center;
     }
 `
-const LeftHero = styled.div`
+const LeftHero = styled.div`    
+    width: 50vw;
     img {
-        height: 30vw;
+        width: 30vw;
+        z-index: 100;
+        border-left: 10px solid #000;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
-    padding: 3vw;
-    border-left: 10px solid #000;
+    padding-left: 10vw;
     transition: 0.1s all ease-in-out;
     @media (max-width:768px){
         img {
@@ -29,21 +34,32 @@ const LeftHero = styled.div`
     }
 `
 const RightHero = styled.div`
+    width: 50vw;
     background-color: rgba(255,255,255, .1);
+    
     :hover {
         background-color: rgba(255,255,255, 1);
     }
     h1 {
-        font-size: 7vw;
+        line-height: 4.2vw;
+        font-size: 3.4vw;
+        font-weight: 400;
+        span {
+            color: #ee9b00;
+            font-weight: 700;
+            
+        }
     }
     h2 {
+        padding-top: 1vw;
         font-size: 2vw;
+        
     }
-    margin-left:-7vw;
+    
     transition: 0.4s all ease-in-out;
     @media (max-width:768px){
         h1 {
-        font-size: 10vw;
+        font-size: 8vw;
         }
         h2 {
             font-size: 5vw;
@@ -57,12 +73,12 @@ const Hero = () => {
         <Wrapper>
             <LeftHero>
                 <div className="border">
-                    <img src={heroIMG} alt="heroIMG"/>
+                    <img src={heroIMG} alt="heroIMG" />
                 </div>
             </LeftHero>
             <RightHero>
-                <h1>oryginalne</h1>
-                <h2>i nietuzinkowe ozdoby dla domu</h2>
+                <h1>Oryginalne formy i kolory które wniosą w <span>Twoje życie dużo radości</span> i zaspokoją potrzebę piękna</h1>
+                <h2>Daj się ponieść fantazji</h2>
             </RightHero>
         </Wrapper>
     )

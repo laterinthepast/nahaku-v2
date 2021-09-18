@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import aboutMeIMG from '../images/restronainternetowa/about.jpg'
+import aboutMeIMG from '../images/rozne/about.jpg'
+import cart from '../images/icons/cart.svg'
 
 const Wrapper = styled.div`
     padding: 5vw;
@@ -14,19 +15,30 @@ const Button = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10vw;
-    button {
-        width: 25vw;
-        height: 5vw;
-        border-radius: 50px;
-        border:none;
-        transition: 0.1s all ease-in-out;
-        font-size: 1.8vw;
-        font-weight: 900;
-        :hover {
+    width: 100%;
+    
+    margin-bottom: 10vw;
+    text-align: center;
+    background-color: #f0efeb;
+    height: 8vw;
+    img {
+        width: 4vw;
+    }
+    :hover {
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
+    a {
+        display: flex;
+
+        text-decoration: none;
+        color: #f28482;
+        border:none;
+        transition: 0.1s all ease-in-out;
+        font-size: 3vw;
+        font-weight: 900;
+        
+        
     }
     @media (max-width:768px){
         padding: 10vw 0;
@@ -75,7 +87,10 @@ const About = () => {
     return (
         <Wrapper id="about">
             <Button>
-                <a href="/"><button>przejdz do sklepu</button></a>
+                <a href="/">
+                    <p>przejdz do sklepu</p>
+                    <img src={cart} alt="cart" />
+                </a>
             </Button>
             <AboutSection>
                 <div className="about-img">

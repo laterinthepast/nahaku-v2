@@ -12,22 +12,21 @@ const MenuLabel = styled.label`
     background-color: #fff;
     position: fixed;
     top: 1rem;
-    right: 1rem;
-    border-radius: 50%;
+    right: 2rem;
     width: 5rem;
     height: 5rem;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `
 
 const NavBackground = styled.div`
     position: fixed;
     top: 1rem;
     right:1rem;
-    background: rgb(217,242,223);
-    background: linear-gradient(36deg, rgba(217,242,223,1) 0%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(318deg, rgba(255,255,255,1) 0%, rgba(249,255,249,1) 78%);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -139,7 +138,8 @@ const ItemLink = styled.div`
 const LogoImg = styled.div`
     img {
         position: absolute;
-        width: 10rem;
+        width: 10vw;
+        
     }
     @media (max-width:768px){
         img {
