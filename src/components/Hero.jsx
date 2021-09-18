@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import heroIMG from '../images/rozne/heroimg.jpg'
 
 const Wrapper = styled.div`
-    height: 100vh;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.2s all ease-in-out;
     background: rgb(255,255,255);
-    background: linear-gradient(318deg, rgba(255,255,255,1) 0%, rgba(249,255,249,1) 78%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,255,243,1) 100%);
     @media (max-width:768px){
         flex-direction: column;
         justify-content: center;

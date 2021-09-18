@@ -10,5 +10,6 @@
 
 body {
   background: white;
-  background: linear-gradient(318deg, white 0%, #f9fff9 78%);
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#f3fff3));
+  background: linear-gradient(90deg, white 0%, #f3fff3 100%);
 }

@@ -26,7 +26,7 @@ const NavBackground = styled.div`
     top: 1rem;
     right:1rem;
     background: rgb(255,255,255);
-    background: linear-gradient(318deg, rgba(255,255,255,1) 0%, rgba(249,255,249,1) 78%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,255,243,1) 100%);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -136,15 +136,15 @@ const ItemLink = styled.div`
     
 `
 const LogoImg = styled.div`
+    padding: 1vw 0 0 1vw;
     img {
-        position: absolute;
-        width: 10vw;
+        width: 7vw;
         
     }
     @media (max-width:768px){
         img {
             width: 25vw;
-            z-index: -1;
+            
         }
     }
 `
