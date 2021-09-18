@@ -14,7 +14,10 @@ const Wrapper = styled.div`
         padding: 1vw;
         h1 {
             font-size: 10vw;
-}   
+        }  
+        .title {
+            padding-bottom: 10vw;
+        } 
     }
     
 `
@@ -31,7 +34,10 @@ const ProductWrapper = styled.div`
     
     @media (max-width:768px){
         flex-direction: column;
-        
+        gap: 16vw;
+        .reverse {
+        flex-direction: column;
+    }
     }
 `
 const ProductCard = styled.div`
@@ -42,8 +48,9 @@ const ProductCard = styled.div`
     gap: 5vw;
     
     @media (max-width:768px){
-        border-bottom: 1px solid #000;
         
+        flex-direction: column;
+        height: auto;
     }
 `
 const CardImg = styled.div`
@@ -52,17 +59,15 @@ const CardImg = styled.div`
         width: 100%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-    
     @media (max-width:768px){
-        p {
-            font-size: 7vw;
-        }
         
+        img {
+            width: 70vw;
+        }
     }
 
 `
 const CardText = styled.div`
-    
     h2 {
         font-size: 2vw;
         border-bottom: 2px solid #000;
@@ -90,16 +95,22 @@ const CardText = styled.div`
 
 
     @media (max-width:768px){
+        
         h2 {
         font-size: 7vw;
         
-    }
-    p {
-        padding-top: 0.5rem;
-        
-        font-size: 5vw;
-    }
-        
+        }
+        p {
+            padding-top: 0.5rem;
+            
+            font-size: 5vw;
+        }
+        button {
+            width: 90vw;
+            height: 15vw;
+            font-size: 7vw;
+        }
+            
     }
 `
 

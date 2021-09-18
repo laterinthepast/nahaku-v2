@@ -11,10 +11,10 @@ const Wrapper = styled.div`
     background: rgb(255,255,255);
     background: linear-gradient(318deg, rgba(255,255,255,1) 0%, rgba(249,255,249,1) 78%);
     @media (max-width:768px){
-        height: 100vh;
-        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 `
 const LeftHero = styled.div`    
@@ -28,15 +28,19 @@ const LeftHero = styled.div`
     padding-left: 10vw;
     transition: 0.1s all ease-in-out;
     @media (max-width:768px){
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        padding: 0;
         img {
-            height: 50vh;
+            width: 60vw;
         }
     }
 `
 const RightHero = styled.div`
-    width: 50vw;
+    width: 70vw;
     background-color: rgba(255,255,255, .1);
-    
     :hover {
         background-color: rgba(255,255,255, 1);
     }
@@ -58,11 +62,17 @@ const RightHero = styled.div`
     
     transition: 0.4s all ease-in-out;
     @media (max-width:768px){
+        width: 90vw;
         h1 {
-        font-size: 8vw;
+        padding-top: 5vw;
+        font-size: 5vw;
+        font-weight: 600;
+        line-height: 7vw;
         }
         h2 {
-            font-size: 5vw;
+            padding-top: 5vw;
+            font-size: 4vw;
+            font-weight: 400;
         }
         margin:0vw;
     }
@@ -78,7 +88,7 @@ const Hero = () => {
             </LeftHero>
             <RightHero>
                 <h1>Oryginalne formy i kolory które wniosą w <span>Twoje życie dużo radości</span> i zaspokoją potrzebę piękna</h1>
-                <h2>Daj się ponieść fantazji</h2>
+                <h2>...daj się ponieść fantazji</h2>
             </RightHero>
         </Wrapper>
     )

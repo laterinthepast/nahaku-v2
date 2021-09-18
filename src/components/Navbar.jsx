@@ -9,7 +9,7 @@ const COLORS = {
 };
 
 const MenuLabel = styled.label`
-    background-color: #fff;
+    background-color: transparent;
     position: fixed;
     top: 1rem;
     right: 2rem;
@@ -18,7 +18,7 @@ const MenuLabel = styled.label`
     cursor: pointer;
     z-index: 1000;
     text-align: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
 `
 
 const NavBackground = styled.div`
@@ -143,7 +143,7 @@ const LogoImg = styled.div`
     }
     @media (max-width:768px){
         img {
-            width: 7rem;
+            width: 25vw;
         }
     }
 `

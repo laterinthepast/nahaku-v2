@@ -16,7 +16,6 @@ const Button = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    
     margin-bottom: 10vw;
     text-align: center;
     background-color: #f0efeb;
@@ -30,24 +29,27 @@ const Button = styled.div`
         }
     a {
         display: flex;
-
         text-decoration: none;
         color: #f28482;
         border:none;
         transition: 0.1s all ease-in-out;
         font-size: 3vw;
         font-weight: 900;
-        
-        
     }
     @media (max-width:768px){
-        padding: 10vw 0;
-        button {
-            background: rgb(217,242,223);
-            background: linear-gradient(36deg, rgba(217,242,223,1) 0%, rgba(236,246,238,1) 58%, rgba(255,255,255,1) 100%);
-            width: 60vw;
-            height: 20vw;
-            font-size: 5vw;
+        height: 20vw;
+        margin: 10vw 0;
+        padding: 0;
+        a {
+            
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        p {
+            
+            font-size: 7vw;
         }
         
     }
