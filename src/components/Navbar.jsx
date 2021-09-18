@@ -144,6 +144,7 @@ const LogoImg = styled.div`
     @media (max-width:768px){
         img {
             width: 25vw;
+            z-index: -1;
         }
     }
 `

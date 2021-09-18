@@ -41,14 +41,11 @@ const Button = styled.div`
         margin: 10vw 0;
         padding: 0;
         a {
-            
             flex-direction: column-reverse;
             align-items: center;
             justify-content: center;
         }
-        
         p {
-            
             font-size: 7vw;
         }
         

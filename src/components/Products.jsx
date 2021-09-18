@@ -121,7 +121,7 @@ const Products = () => {
                 <h1>produkty</h1>
             </div>
             <ProductWrapper>
-                <ProductCard>
+                <ProductCard id="products">
                     <CardImg>
                         <img src={oczy} alt="gallery" />
                     </CardImg>
