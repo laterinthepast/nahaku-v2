@@ -12,7 +12,7 @@ const MenuLabel = styled.label`
     background-color: transparent;
     position: fixed;
     top: 1rem;
-    right: 2rem;
+    right: 1rem;
     width: 5rem;
     height: 5rem;
     cursor: pointer;
