@@ -34,7 +34,7 @@ const LeftHero = styled.div`
         width: 100vw;
         padding: 0;
         img {
-            width: 70vw;
+            width: 60vw;
             z-index: 100;
         }
     }
