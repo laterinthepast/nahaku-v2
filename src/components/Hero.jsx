@@ -14,7 +14,7 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
     }
 `
 const LeftHero = styled.div`    
@@ -34,7 +34,7 @@ const LeftHero = styled.div`
         width: 100vw;
         padding: 0;
         img {
-            width: 60vw;
+            width: 70vw;
             z-index: 100;
         }
     }
@@ -66,7 +66,7 @@ const RightHero = styled.div`
         width: 90vw;
         h1 {
         padding-top: 5vw;
-        font-size: 5vw;
+        font-size: 6vw;
         font-weight: 600;
         line-height: 7vw;
         }

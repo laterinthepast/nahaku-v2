@@ -11,7 +11,7 @@ const Wrapper = styled.div`
         font-size: 5vw;
     }
     @media (max-width:768px){
-        padding: 1vw;
+        
         h1 {
             font-size: 10vw;
         }  
