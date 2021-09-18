@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,255,243,1) 100%);
     @media (max-width:768px){
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100vh;
     }
