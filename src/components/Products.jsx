@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import oczy from '../images/oczy/oko (13).jpg'
-import oczy1 from '../images/oczy/oko (14).jpg'
-import oczy2 from '../images/oczy/oko (15).jpg'
+import oczy from '../images/oczy/oko (1).jpg'
+import oczy1 from '../images/rozne/a.jpg'
+import oczy2 from '../images/rozne/b.jpg'
 
 
 const Wrapper = styled.div`
