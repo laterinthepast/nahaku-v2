@@ -71,11 +71,11 @@ const CardText = styled.div`
     h2 {
         font-size: 2vw;
         border-bottom: 2px solid #000;
-        width: 50%;
+        width: 100%;
     }
     p {
         padding-top: 1rem;
-        text-align: justify;
+        text-align: left;
         font-size: 1.1vw;
     }
     button {
