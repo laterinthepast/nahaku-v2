@@ -44,7 +44,7 @@ const ProductCard = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 65vh;
     gap: 5vw;
     
     @media (max-width:768px){
