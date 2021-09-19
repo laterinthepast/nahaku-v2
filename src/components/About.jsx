@@ -22,6 +22,7 @@ const Button = styled.div`
     height: 8vw;
     img {
         width: 4vw;
+        
     }
     :hover {
             cursor: pointer;
@@ -30,7 +31,7 @@ const Button = styled.div`
     a {
         display: flex;
         text-decoration: none;
-        color: #f28482;
+        color: #ee9b00;
         border:none;
         transition: 0.1s all ease-in-out;
         font-size: 3vw;

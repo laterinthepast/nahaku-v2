@@ -86,7 +86,7 @@ const CardText = styled.div`
         transition: 0.1s all ease-in-out;
         font-size: 1.8vw;
         font-weight: 900;
-        background: #caffbf;
+        background: #ee9b00;
         :hover {
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;

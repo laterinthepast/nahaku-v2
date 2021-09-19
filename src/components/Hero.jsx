@@ -14,7 +14,7 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 90vh;
+        height: 80vh;
     }
 `
 const LeftHero = styled.div`    
