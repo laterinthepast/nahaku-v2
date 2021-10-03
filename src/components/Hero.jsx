@@ -12,10 +12,12 @@ const Wrapper = styled.div`
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(243,255,243,1) 100%);
     @media (max-width:768px){
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        height: 80vh;
+        height: 100vh;
+        padding: 0;
     }
+    padding-bottom: 15vw;
 `
 const LeftHero = styled.div`    
     width: 50vw;
@@ -31,10 +33,10 @@ const LeftHero = styled.div`
         display:flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        
         padding: 0;
         img {
-            width: 60vw;
+            width: 70vw;
             z-index: 100;
         }
     }

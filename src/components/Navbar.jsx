@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import styled from 'styled-components';
-import logo from '../images/icons/lego.png'
+import logo from '../images/icons/Logo.svg'
 
 const COLORS = {
     primaryDark: "#114b4c",
@@ -11,14 +11,16 @@ const COLORS = {
 const MenuLabel = styled.label`
     background-color: transparent;
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-    width: 5rem;
-    height: 5rem;
+    top: 0.4vw;
+    right: 0.4vw;
+    width: 6vw;
+    height: 6vw;
     cursor: pointer;
     z-index: 1000;
     text-align: center;
-    
+    @media (max-width:768px){
+        width: 15vw;
+    }
 `
 
 const NavBackground = styled.div`
@@ -32,22 +34,25 @@ const NavBackground = styled.div`
     border-radius: 50%;
     transform: ${props => props.clicked ? "scale(80)" : "scale(0)"};
     transition: transform 0.5s;
-    z-index: 7;
+    z-index: 600;
+    
 `
 
 const Icon = styled.span`
     position: relative;
     background-color: ${(props) => (props.clicked) ? "transparent" : "#000"};
-    width: 3rem;
+    width: 3vw;
     height: 2px;
     display: inline-block;
     margin-top: 2.5rem;
     transition: all 0.3s;
-
+@media (max-width:768px){
+        width: 10vw;
+    }
     &::before, &::after {
         content:"";
         background-color: #000;
-        width: 3rem;
+        width: 4vw;
         height: 2px;
         display: inline-block;
         position: absolute;
@@ -136,7 +141,9 @@ const ItemLink = styled.div`
     
 `
 const LogoImg = styled.div`
-    padding: 1vw 0 0 1vw;
+    padding: 0.4vw 0 0.4;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
     img {
         width: 7vw;
         
@@ -144,7 +151,6 @@ const LogoImg = styled.div`
     @media (max-width:768px){
         img {
             width: 25vw;
-            
         }
     }
 `
@@ -155,13 +161,14 @@ const Navbar = () => {
 
     return (
         <>
-            <LogoImg>
-                <img src={logo} alt="aa" href="/" />
-            </LogoImg>
-
-            <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
-                <Icon clicked={click}>&nbsp;</Icon>
-            </MenuLabel>
+            <div className="nav-main">
+                <LogoImg>
+                    <img src={logo} alt="aa" href="/" />
+                </LogoImg>
+                <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
+                    <Icon clicked={click}>&nbsp;</Icon>
+                </MenuLabel>
+            </div>
             <NavBackground clicked={click}>&nbsp;</NavBackground>
 
             <Navigation clicked={click}>

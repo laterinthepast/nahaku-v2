@@ -6,7 +6,7 @@ import oczy2 from '../images/rozne/b.jpg'
 
 
 const Wrapper = styled.div`
-    padding: 2vw;
+    padding: 5vw 2vw 2vw 2vw;
     h1 {
         font-size: 5vw;
     }
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
             padding-bottom: 10vw;
         } 
     }
+    border-top: 4px solid black;
     
 `
 const ProductWrapper = styled.div`
@@ -54,7 +55,7 @@ const ProductCard = styled.div`
     }
 `
 const CardImg = styled.div`
-     z-index: 1;
+    
     img {
         width: 100%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
