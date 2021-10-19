@@ -144,6 +144,7 @@ const LogoImg = styled.div`
     padding: 0.4vw 0 0.4;
     background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
+    padding: 2vw;
     img {
         width: 7vw;
         

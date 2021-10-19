@@ -17,7 +17,8 @@ const Wrapper = styled.div`
         height: 100vh;
         padding: 0;
     }
-    padding-bottom: 15vw;
+    padding: 5vw;
+    gap: 5vw;
 `
 const LeftHero = styled.div`    
     width: 50vw;
